@@ -34,7 +34,7 @@ const CartPage = () => {
            currency: "INR",
            name: "ved mandal",
            description: "this is ved mandal description",
-           image: "https://example.com/your_logo",
+         
            order_id: data.order.id,
            callback_url: `${process.env.REACT_APP_API}/api/v1/product/verify-payment`,
            prefill: {
