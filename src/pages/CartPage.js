@@ -194,7 +194,7 @@ const CartPage = () => {
 
                         {
                             auth?.token?( <button className='btn btn-outline-warning' onClick={()=>Navigate("/dashboard/user/profile")}>Update Address</button>
-                            ):(<button className='btn btn-outline-warning'  onClick={()=>Navigate("/login",{state:"/cart",})}>please login to checkout</button>)
+                            ):(<button className='btn btn-outline-warning'  onClick={()=>Navigate("/login",{state:"/cart"})}>please login to checkout</button>)
                         }
                     </div>
                     </>)
@@ -203,7 +203,7 @@ const CartPage = () => {
                     {!cart?.length?(" "):(<>
                         
                   
-                  <button className='button' onClick={Handler} disabled={!auth?.user?.address} >MakePAYMENT</button>
+                  <button className='button' onClick={()=>Handler()} disabled={!auth?.user?.address} >MakePAYMENT</button>
 
                     
                     
