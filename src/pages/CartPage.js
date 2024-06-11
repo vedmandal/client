@@ -1,5 +1,5 @@
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import Layout from '../components/layout/Layout'
 
 
@@ -72,6 +72,24 @@ const CartPage = () => {
         
     }
    }
+   const loadScript=src=>{
+    return new Promise((resolve,reject)=>{
+        const script=document.createElement("script");
+        script.src=src;
+        script.onload=resolve;
+        script.onerror=reject;
+        document.body.appendChild(script)
+    })
+
+    }
+   
+
+   useEffect(()=>{
+    const loadrazorpay=async ()=>{
+       await loadScript("https://checkout.razorpay.com/v1/checkout.js") 
+    }
+    loadrazorpay();
+   },[])
 
    
     
