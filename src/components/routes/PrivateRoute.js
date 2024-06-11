@@ -16,7 +16,7 @@ export default function PrivateRoute (){
 
         const checkauth=async(req,res)=>{
 
-            const {data}=await axios.get("http://localhost:8080/api/v1/auth/user-auth")
+            const {data}=await axios.get(`${process.env.REACT_APP_API}/api/v1/auth/user-auth`)
             if(data.ok){
                 setok(true)
             }else{

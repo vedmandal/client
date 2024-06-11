@@ -12,7 +12,7 @@ const SearchForm = () => {
     const Searchsubmit=async(e)=>{
         e.preventDefault();
         try {
-            const {data}=await axios.get(`http://localhost:8080/api/v1/product/search/${search.keyword}`)
+            const {data}=await axios.get(`${process.env.REACT_APP_API}/api/v1/product/search/${search.keyword}`)
           if(data){
             setsearch({...search,results:data})
             Navigate("/search")
