@@ -14,7 +14,7 @@ const AdminOrders = () => {
   const[auth,setauth]=useAuth()
   const getorders=async()=>{
     try {
-      const{data}=await axios.get("http://localhost:8080/api/v1/product/all-order")
+      const{data}=await axios.get(`${process.env.REACT_APP_API}/api/v1/product/all-order`)
      setorders(data)
     } catch (error) {
       console.log(error)
