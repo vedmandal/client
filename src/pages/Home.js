@@ -24,7 +24,7 @@ const Home = () => {
    <Layout>
     <main className='main'>
     <section className="home section" id="home">
-  <div className="home__container container grid">
+  <div className="home__container containers grid">
     <img src="https://images.unsplash.com/photo-1593526411462-6fbbec21d9a2?q=80&w=1468&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="home image" className="home__img" />
     <div className="home__data">
       <h1 className="home__title">
@@ -48,7 +48,7 @@ const Home = () => {
 
 
 <section className="about section" id="about">
-  <div className="about__container container grid">
+  <div className="about__container containers grid">
     <div className="about__data">
       <span className="section__subtitle">
         About us
@@ -74,7 +74,7 @@ const Home = () => {
 <section className="popular section" id="popular">
   <span className="section__subtitle">The Best And</span>
   <h2 className="section__title">Popular Products</h2>
-  <div className="popular__container container grid">
+  <div className="popular__container containers grid">
     <article className="popular__card">
       <img src="https://www.freeiconspng.com/uploads/black-pen-png-transparent-1.png" alt={"product_img"}className="popular__img" />
       <h3 className="popular__name">pen</h3>
@@ -103,7 +103,7 @@ const Home = () => {
 
 
 <section className="recently section" id="recently">
-  <div className="recently__container container grid">
+  <div className="recently__container containers grid">
     <div className="recently__data">
       <span className="section__subtitle">Recently Added</span>
       <h2 className="section__title">Stationeries With Appearance <br /> Stationery Gets An AStationery.</h2>

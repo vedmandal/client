@@ -7,11 +7,11 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
    <footer className="footer">
-  <div className="footer__container container  grid">
-    <div>
-      <a href="#" className="footer__logo">
+  <div className="footer__container containers grid">
+    <div >
+      <h2 href="#" className="footer__logo">
         <img src={img1} />R P ENTERPRISE
-      </a>
+      </h2>
       <p className="footer__description">
       You Too Can Have A Pencil Like Mine. <br />
       Stationeries With Sand <br />
@@ -19,7 +19,7 @@ const Footer = () => {
        
       </p>
     </div>
-    <div className="footer__container container  grid">
+   
     <div className="footer__content">
       <div >
         <h3 className="footer__title">
@@ -87,7 +87,7 @@ const Footer = () => {
       </div>
     </div>
 
-    </div>
+   
     
   </div>
 </footer>

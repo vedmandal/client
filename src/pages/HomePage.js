@@ -140,9 +140,9 @@ const HomePage = () => {
   },[checked,radio])
   return (
    <Layout>
-    <div className='product__container grid'>
+    <div className="product__container  container grid">
      
-        <div className='filter__data'>
+        <div className='filter__data container grid'>
          
        <h4 className='section__subtitle'>Filter by Category</h4>
        {
