@@ -38,20 +38,20 @@ const Header = () => {
             
       <ul className="nav__list">
       <li className="nav__item">
-      <NavLink to={"/"} className="nav__link" aria-current="page" >Home</NavLink>
+      <NavLink to={"/"} className="nav__link" onClick={()=>setmenu(false)} aria-current="page" >Home</NavLink>
         </li>
         <li className="nav__item">
-          <NavLink to={"/product"} className="nav__link" aria-current="page" >Product</NavLink>
+          <NavLink to={"/product"} className="nav__link" aria-current="page"onClick={()=>setmenu(false)} >Product</NavLink>
         </li>
         
       
         {
            ! auth?.user ?(<>
             <li className="nav__item">
-          <NavLink className="nav__link" to={"/register"}>Register</NavLink>
+          <NavLink className="nav__link" onClick={()=>setmenu(false)} to={"/register"}>Register</NavLink>
         </li>
         <li className="nav__item">
-          <Link className="nav__link" to={"/login"}>LOGIN</Link>
+          <Link className="nav__link" onClick={()=>setmenu(false)} to={"/login"}>LOGIN</Link>
         </li>
             </>):(<>
               <li className="nav__item dropdown">
@@ -59,8 +59,8 @@ const Header = () => {
    {auth?.user?.name}
   </Link>
   <ul className="dropdown-menu">
-    <li className='nav__link'><NavLink to={`/dashboard/${auth?.user?.role===1?"admin":"user"}`} className="dropdown-item nav__link">Dashboard</NavLink></li>
-    <li className='nav__link'><NavLink className="dropdown-item" to={"/login"} onClick={logouthandler} >Logout</NavLink></li>
+    <li className='nav__link'><NavLink to={`/dashboard/${auth?.user?.role===1?"admin":"user"}`}onClick={()=>setmenu(false)} className="dropdown-item nav__link">Dashboard</NavLink></li>
+    <li className='nav__link'><NavLink className="dropdown-item" to={"/login"}  onClick={logouthandler} >Logout</NavLink></li>
    
   </ul>
 
@@ -68,7 +68,7 @@ const Header = () => {
  </>)
         }
 
-        <li className='nav__link' onClick={()=>{Navigate("/cart")}}>cart({cart?.length})</li>
+        <li className='nav__link' onClick={()=>{Navigate("/cart");setmenu(false)}}>cart({cart?.length})</li>
       
         
         

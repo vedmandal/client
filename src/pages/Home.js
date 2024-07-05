@@ -15,6 +15,7 @@ import rec1 from "./assets/img/spinach-leaf.png"
 import rec2 from "./assets/img/recently-salmon-sushi.png"
 import rec3 from "./assets/img/leaf-branch-2.png"
 import rec4 from "./assets/img/leaf-branch-3.png"
+import { Link } from 'react-router-dom'
 
 
 
@@ -37,7 +38,7 @@ const Home = () => {
       <p className="home__discription">
       Find the best copy, pen, chart paper, envelopes, files and other stationary items here.
       </p>
-      <a href="#" className="button"> Order Now <i className="ri-arrow-right-line" /></a>
+      <Link to={"/Product"} className="button"> Order Now <i className="ri-arrow-right-line" /></Link>
     </div>
   </div>
  <img src={leaf1}  className="home__leaf-1"/>
@@ -64,7 +65,7 @@ const Home = () => {
       R P ENTERPRISE is India's best online stationery shop near you that brings the most recognised stationery from around the world together in one place. We strive to bring originality to the Indian stationery market.
       </p>
     </div>
-    <img src={"https://images.unsplash.com/photo-1593526367339-673b8872f19a?q=80&w=1468&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} alt className="about__img" />
+    <img   src={"https://images.unsplash.com/photo-1593526367339-673b8872f19a?q=80&w=1468&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} alt className="about__img" />
   </div>
   <img src={leafbranch1} alt className="about__leaf" />
 </section>

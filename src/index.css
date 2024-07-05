@@ -223,7 +223,18 @@ img {
 }
 
 .main {
-  overflow: hidden; /* For animation ScrollReveal */
+  overflow: hidden;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+
+   /* For animation ScrollReveal */
+}
+footer{
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -508,8 +519,10 @@ header{
   column-gap: 5rem;
 }
 .about__img{
-  width: 300px;
+  width: 500px;
+  border-radius: 2px;
   justify-content: center;
+  align-items: center;
 }
 
 .about__leaf{
@@ -766,11 +779,35 @@ header{
   .footer__content{
     grid-template-columns: repeat(2,max-content);
   }
+  .home__container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .about__container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .recently__container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
   
   
 }
 
 @media screen and (min-width:767px) {
+  .main {
+   
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  
+  
+     /* For animation ScrollReveal */
+  }
   .nav{
     column-gap:3rem
   }
@@ -789,6 +826,21 @@ header{
   }
   .dark-theme .nav__menu{
     box-shadow: none;
+  }
+  .home__container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .about__container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+  .recently__container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
   }
   .footer__container{
     grid-template-columns: repeat(2,max-content);
@@ -954,6 +1006,7 @@ header{
   
 }
 @media screen and (min-width:1280px) {
+  
   .home__leaf-1{
     width: 150px;
     top: 5rem;
